@@ -1,0 +1,29 @@
+/**
+ * Mínimo común múltiplo en C (MCM) usando el algoritmo para  el  * máximo común divisor
+ * @date 2019-12-19
+ * @author parzibyte
+ * @see https://parzibyte.me/blog
+ * */
+#include <stdio.h>
+
+// Si quieres puedes usar la función de MCD recursiva: https://parzibyte.me/blog/2019/12/18/maximo-comun-divisor-c-algoritmo-euclides/
+int maximo_comun_divisor(int a, int b) {
+    int temporal;//Para no perder b
+    while (b != 0) {
+        temporal = b;
+        b = a % b;
+        a = temporal;
+    }
+    return a;
+}
+
+int minimo_comun_multiplo(a, b) {
+    return (a * b) / maximo_comun_divisor(a, b);
+}
+
+int main(void) {
+    int a = 72, b = 50;
+    int mcm = minimo_comun_multiplo(a, b);
+    printf("MCM de %d y %d = %d\n", a, b, mcm);
+    return 0;
+}
