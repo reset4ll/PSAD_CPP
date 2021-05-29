@@ -7,8 +7,7 @@
 
 int main()
 {
-    // Prototipos
-    
+    // [Prototipos]
     // Muestra las instrucciones para el usuario
     void instruct_user(const float, const float);
     // Encuentra el salario bruto
