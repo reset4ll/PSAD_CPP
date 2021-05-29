@@ -67,6 +67,7 @@ float get_hours()
     else
        std::cout << "Fuera de rango !!!" << std::endl;
        std::cout << "Introduce el rango (0-24h)" << std::endl;
+       return;
 }
 
 // Obtiene el salario por hora trabajada
@@ -82,6 +83,7 @@ float get_rate()
     else
         std::cout << "Fuera de rango !!!" << std::endl;
         std::cout << "Introduce el rango (0-24h)" << std::endl;
+        return;
 
 }
 
