@@ -93,6 +93,7 @@ void display(float gross, float net)
 {
     std::cout << "El salario bruto es $" << gross << std::endl;
     std::cout << "El salario neto es $" << net << std::endl;
+    return;
 }
 
 
