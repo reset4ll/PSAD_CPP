@@ -63,11 +63,14 @@ float get_hours()
     std::cin >> hours;
     
     if (hours > 0 && hours <= 24) // Rango diario 0-24h
+    {
        return hours;
+    }
     else
+    {
        std::cout << "Fuera de rango !!!" << std::endl;
        std::cout << "Introduce el rango (0-24h)" << std::endl;
-       return;
+    }  
 }
 
 // Obtiene el salario por hora trabajada
@@ -79,12 +82,14 @@ float get_rate()
     std::cin >> rate;
     
     if (hours > 0 && hours <= 24) // Rango diario 0-24h
+    {
        return rate;
+    }
     else
+    {
         std::cout << "Fuera de rango !!!" << std::endl;
         std::cout << "Introduce el rango (0-24h)" << std::endl;
-        return;
-
+    }
 }
 
 // Encuentra el salario bruto
