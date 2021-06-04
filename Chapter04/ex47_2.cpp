@@ -25,7 +25,7 @@ int main()
               << std::endl;
 }
 
-// Definición de last_get() que encuentra la última letra de las dos
+// Definición de get_last() que encuentra la última letra de las dos
 char get_last(char letter1, char letter2)
 {
     if (letter1 > letter2)
