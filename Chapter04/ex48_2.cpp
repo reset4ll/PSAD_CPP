@@ -1,6 +1,6 @@
-// Escribir el programa que añada al ejercicio 'payroll.cpp' la función
-// revisada compute_gross() de la figura 4.12 del libro
-
+// Reescribir la funcion compute_gros() en la que se permita al usuario
+// introducir el ratio por horas extras en vez de tratarlo como un valor
+// constante.
 
 #include <iostream>
 
@@ -59,11 +59,11 @@ float compute_gross(float hours, float rate)
 {
     // DATOS LOCALES EXTRA
     const float max_hours = 40.0; // Máximo número de horas sin paga extra    
-    float overtime_rate;  // Ratio de incremento por paga extra
+    float overtime_rate;  // Ratio de incremento por horas extra
     float gross; // Sueldo bruto
 
-    // Introduce el ratio por paga extra
-    std::cout << "Introduzca el ratio de incremento por paga extra: " << std::endl;
+    // Introduce el ratio por horas extra
+    std::cout << "Introduzca el ratio de incremento por horas extra: " << std::endl;
     std::cin >> overtime_rate;
 
     if (hours <= max_hours)
