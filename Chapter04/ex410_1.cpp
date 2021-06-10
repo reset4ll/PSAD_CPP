@@ -31,6 +31,7 @@ int main()
           std::cout << "El caracter es un digito." << std::endl;
           break;            
 
+    // GUARDA pedida en ejercicio #3 de esta sección añadida aquí
     default: 
           std::cout << "El caracter introducido es invalido!" << std::endl;
     }
