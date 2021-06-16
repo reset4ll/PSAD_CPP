@@ -7,8 +7,7 @@ int main()
 {
     int numero = -2;
 
-    while(numero <= 3)
-    {
+    while (numero <= 3) {
         std::cout << "Numero: " << numero << std::endl;
         numero++;
     }   // Fin while

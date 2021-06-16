@@ -12,11 +12,10 @@ int main()
     std::cout << "Introduzca un valor de dato: ";
     std::cin >> dato;
 
-    while(resultado <= dato)
-    {
+    while (resultado <= dato) {
         std::cout << resultado;
-        if (resultado < dato){  // Filtro para evitar el
-        std::cout << signo;     // último '+' del bucle
+        if (resultado < dato) {  // Filtro para evitar el
+        std::cout << signo;      // último '+' del bucle
         }
         resultado++;
     }   // Fin while

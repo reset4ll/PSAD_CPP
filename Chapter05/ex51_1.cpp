@@ -10,8 +10,7 @@ int main()
     int cuadrado;
     int numero = 1;
 
-    while (numero <= 5)
-    {
+    while (numero <= 5) {
         cuadrado = get_square(numero);
         std::cout <<" El cuadrado de " << numero << " es " << cuadrado << "\n";
         numero++;

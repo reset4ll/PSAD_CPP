@@ -17,7 +17,7 @@ int main()
     std::cout << year << " >> " << personas_iniciales << '\n';
 
     personas_actuales = personas_iniciales;   // Inicializa
-    while(MAX >= personas_actuales) {
+    while (MAX >= personas_actuales) {
         incremento = (personas_actuales * 10) / 100;   // Cálculo
         personas_actuales += incremento;
         year++;
