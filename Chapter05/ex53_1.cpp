@@ -10,22 +10,25 @@ int main()
     float personas_iniciales = 9870;
     const float MAX = 30000;
     float personas_actuales;
-    int incremento, year;
+    int incremento, year, total_time;
+    int time = 1;
 
     std::cout << "Introduzca el año actual: ";
     std::cin >> year;
-    std::cout << year << " >> " << personas_iniciales << '\n';
+    std::cout << year << " : " << personas_iniciales << '\n';
 
     personas_actuales = personas_iniciales;   // Inicializa
     while (MAX >= personas_actuales) {
         incremento = (personas_actuales * 10) / 100;   // Cálculo
         personas_actuales += incremento;
         year++;
-        std::cout << year << " >> " << personas_actuales << '\n';
+        std::cout << year << " : " << personas_actuales << '\n';
+        total_time += time;
     }   // Fin while
 
     std::cout << "----+----\n";
     std::cout << "Se sobrepasarán los 30000 habitantes en el año: " \
-              << year << '\n';
+              << year << "," << " a los " << total_time << " años." << '\n';
+
     return 0;
 }
