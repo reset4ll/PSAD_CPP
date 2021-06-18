@@ -12,7 +12,7 @@ int main()
     float inverso;
 
     while (number != 0) {  // Valor centinela
-        std::cout << "Introducir un number positivo o negativo y [0] " \
+        std::cout << "Introducir un número positivo o negativo y [0] " \
         << "para acabar: ";
         std::cin >> number;
         inverso = get_inverso(number);  // LLamada a get_inverso()
