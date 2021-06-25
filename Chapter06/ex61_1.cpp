@@ -1,7 +1,6 @@
 // Escribir un controlador para la función 'hypot()'
 
 #include <iostream>
-#include <cmath>
 #include <iomanip>
 #include "hipot.h"
 
