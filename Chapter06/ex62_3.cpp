@@ -1,6 +1,6 @@
 // Escribir una función que eleve un número 'double'(X) a una potencia 'int'(N)
 //  al multiplicar X por si mismo N veces usando un 'for' loop.
-//  Para hacer que la función funcione para valores negativos de N usar la 
+//  Para hacer que la función funcione para valores negativos de N usar la
 //  función 'abs(N)' como la expresión final del bucle 'for'
 
 #include <iostream>
@@ -24,13 +24,13 @@ int main()
 
     std::cout << "----------" << '\n';
 
-    // Función pow() :: test my_pow() 
+    // Función pow() :: test my_pow()
     for (index = 0; index <= 5; ++index)  // Cinco números
-      
+
     std::cout << "Index: " << index << " -> " << "pow(2,exp): " \
               << pow(2,index) << std::setw(5)  << " -> " << "pow(2,-exp): "  \
               << pow(2,-index) << std::setw(6) << '\n';
-    
+
     return 0;
 }
 
