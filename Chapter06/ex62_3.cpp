@@ -19,8 +19,8 @@ int main()
 
     // Función my_pow() :: base (+,-) y exp (+)
     std::cout << "Index: " << index << " -> " << "my_pow(2,exp): " \
-              << my_pow(2,index) << std::setw(5)  << " -> " << "my_pow(-2,-exp): "  \
-              << my_pow(-2,-index) << std::setw(6) << '\n';
+              << my_pow(2,index) << std::setw(5)  << " -> " << "my_pow(2,-exp): "  \
+              << my_pow(2,-index) << std::setw(6) << '\n';
 
     std::cout << "----------" << '\n';
 
@@ -28,8 +28,8 @@ int main()
     for (index = 0; index <= 5; ++index)  // Cinco números
       
     std::cout << "Index: " << index << " -> " << "pow(2,exp): " \
-              << pow(2,index) << std::setw(5)  << " -> " << "pow(-2,-exp): "  \
-              << pow(-2,-index) << std::setw(6) << '\n';
+              << pow(2,index) << std::setw(5)  << " -> " << "pow(2,-exp): "  \
+              << pow(2,-index) << std::setw(6) << '\n';
     
     return 0;
 }
@@ -43,7 +43,4 @@ double my_pow(double base, int exp)
     for (index = 1; index <= exp; ++index)
         potencia *= base;
     return potencia;
-
-
-
 }
