@@ -1,6 +1,6 @@
-// Escribir una función que muestre enn pantalla una tabla con todas las potencias
+// Escribir una función que muestre en pantalla una tabla con todas las potencias
 // de su primer argumento de tipo 'int' desde cero hasta la potencia marcada por
-// su segundo argumento también detipo 'int'. La función debería devolver la suma
+// su segundo argumento también de tipo 'int'. La función debería devolver la suma
 // de todas las potencias y mostrarlas en pantalla.
 
 #include <iostream>
@@ -25,11 +25,12 @@ int main ()
 
     pow_table(base, expo);  // Llamada por valor a pow_table()
     sum_pow(base, expo, sum);  // Llamada usando referencia a sum_pow()
+
+    // Recibe por referencia el valor de retorno de 'sum_pow()'
     cout << "\nLa suma total de potencias es de: " << sum << '\n';
 
     return 0;
 }
-
 
 // Definición de pow_table()
 void pow_table(int base, int expo)
